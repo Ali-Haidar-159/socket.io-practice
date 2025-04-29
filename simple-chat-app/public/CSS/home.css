@@ -1,0 +1,28 @@
+/* initial design  */
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+/* main design starts here  */
+
+#mainDiv{
+
+    width: 70%;
+    margin: 30px auto;
+    padding: 15px;
+    text-align: center;
+
+}
+
+#mainDiv nav  ul li{
+
+    list-style-type: none;
+    display: inline;
+    padding: 5px;
+
+}

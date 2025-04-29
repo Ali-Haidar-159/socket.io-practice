@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        
+        <title>Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- milligram css connection  -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+        <!-- my-css connection -->
+        <style>
+
+            #mainDiv{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: bisque;
+
+            }
+
+            #formDiv{
+
+            width: 70%;
+            padding: 15px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <header></header>
+
+        <main>
+
+            <div id="mainDiv">
+
+                <div id="formDiv">
+
+                    <form>
+
+                        <fieldset>
+
+                            <div id="messageDiv">
+
+                                <label for="msg">Enter a message to send it :</label>
+                                <input type="text" name="msg" id="msg">
+
+                            </div>
+
+                            <div id="buttonDiv">
+
+                                <button id="btn">SEND</button>
+
+                            </div>
+
+                        </fieldset>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer></footer>
+
+        <!-- JS connection -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="formJS.js"></script>
+        
+    </body>
+
+</html>

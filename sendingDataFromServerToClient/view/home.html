@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Testing Socket.io</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+
+    <body>
+
+        <header></header>
+
+        <main>
+
+            <h3>My name is Ali</h3>
+
+        </main>
+
+        <footer></footer>
+
+        <!-- JS connection  -->
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+
+            let socket = io() ;
+
+            socket.on("message" , function(msg){
+
+                document.write(msg) ;
+
+            }) ;
+
+        </script>
+        
+    </body>
+
+</html>
